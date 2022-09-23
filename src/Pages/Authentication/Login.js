@@ -5,6 +5,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 import useToken from '../../hooks/useToken';
+import inventory from '../../assets/inventory.png'
 
 const Login = () => {
     const location = useLocation();
@@ -45,7 +46,7 @@ const Login = () => {
         <div>
 
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
-                <div className="hidden bg-cover opacity-80 lg:block lg:w-1/2 login-bg-img"></div>
+                <div className="hidden bg-cover opacity-80 lg:block lg:w-1/2 login-bg-img"><img src={inventory} alt="" /></div>
 
                 <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
                     <h2 className="text-2xl font-semibold text-center text-yellow-800 dark:text-white">Stock Inventory</h2>
